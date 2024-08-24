@@ -4,32 +4,12 @@ import "./Navbar.css";
 
 
 const NavBar = () => {
-  const [title, setTitle] = useState("Home");
-  const [disStatus,setdis]=useState('flex')
-  useEffect(() => {
-    const handleResize = () => {
-      const screenWidth = window.innerWidth;
-      if (screenWidth <= 520) {
-        setTitle('NewReader');
-        setdis('flex')
-      } else {
-        setTitle('Home');
-        setdis('flex')
-         // Set a default title for larger screens (optional)
-      }
-    };
-
-    // Attach the resize event listener
-    window.addEventListener('resize', handleResize);
-
-    // Cleanup function: Remove the event listener on component unmount
-    return () => window.removeEventListener('resize', handleResize);
-  }, []);
   return (
     <>
-    <div style={{display:`${disStatus}`, justifyContent:'center',backgroundColor:'black'}}>
-    <span style={{color:'rgb(204, 207, 210)',fontSize:'30px', letterSpacing:'2px',fontStretch:"ultra-condensed" , fontWeight:'600'}}>NewsReader</span>
-      </div>
+    <div style={{display:'flex', justifyContent:'center',backgroundColor:'black'}}>
+    <span style={{color:'rgb(204, 207, 210)',fontSize:'30px', letterSpacing:'2px',fontStretch:"ultra-condensed" , fontWeight:'600'}}>Advance Calculator</span>
+    </div>
+{/* navbar start */}
       <nav className="navbar  navbar-expand-lg navbar-dark bg-dark">
         <div className="container-fluid">
           <Link
@@ -41,7 +21,7 @@ const NavBar = () => {
             }}
             to="/"
           >
-            {title}
+            Home
           </Link>
           <button
             className="navbar-toggler"
@@ -94,8 +74,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/other">
-                  other
+                <Link className="nav-link" to="/statics">
+                  Statics
                 </Link>
               </li>
             </ul>
