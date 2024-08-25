@@ -6,7 +6,7 @@ import "./Navbar.css";
 const NavBar = () => {
   return (
     <>
-    <div style={{display:'flex', justifyContent:'center',backgroundColor:'black'}}>
+    <div style={{display:'flex', justifyContent:'center',backgroundColor:'black',width:'100vw'}}>
     <span style={{color:'rgb(204, 207, 210)',fontSize:'30px', letterSpacing:'2px',fontStretch:"ultra-condensed" , fontWeight:'600'}}>Advance Calculator</span>
     </div>
 {/* navbar start */}
@@ -69,8 +69,8 @@ const NavBar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/conversion">
-                  conversion
+                <Link className="nav-link" to="/calendar">
+                  calendar
                 </Link>
               </li>
               <li className="nav-item">

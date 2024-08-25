@@ -5,12 +5,13 @@ import Home from './components/Home'
 import Oneparameter from './components/Oneparameter'
 import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Calculator from './components/Calculator/Calculator';
-import Expression from './components/Expression';
-import Conversion from './components/Conversion';
+
 import Twoparameter from './components/Twoparameter';
 import Quadratic from './components/Quadratic';
 import Fracexpression from './components/Fracexpression';
 import Statics from './components/Statics';
+import Calendar from './components/Calendar';
+import NewCalendar from './components/NewCalendar';
 // import {BrowserRouter ,Route, Routes} from "react-router-dom";
 
 
@@ -29,11 +30,11 @@ const App = () => {
        <Route path="/oneparameter" element={<Oneparameter/>} /> 
        <Route path="/calculator" element={<Calculator />} /> 
        <Route path="/expression" element={<Fracexpression/>} /> 
-       <Route path="/conversion" element={<Conversion/>} /> 
+       <Route path="/calendar" element={<Calendar/>} /> 
        <Route path="/twoparameter" element={<Twoparameter/>} /> 
        <Route path="/qudratic" element={<Quadratic/>}/> 
        <Route path="/statics" element={<Statics/>} /> 
-    </Routes>
+      </Routes>
     </BrowserRouter >
 
   )
