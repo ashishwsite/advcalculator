@@ -29,22 +29,16 @@ const Twoparameter = () => {
      
   function getDifference(dt1,dt2) 
   { 
-  // COUNT TOTAL NUMBER OF DAYS BEFORE FIRST DATE 'dt1' 
-     
-          // initialize count using years and day 
+  
           let n1 = dt1.y * 365 + dt1.d; 
      
-          // Add days for months in given date 
           for (let i = 0; i < dt1.m - 1; i++) 
           { 
               n1 += monthDays[i]; 
           } 
      
-          // Since every leap year is of 366 days, 
-          // Add a day for every leap year 
           n1 += countLeapYears(dt1); 
      
-          // SIMILARLY, COUNT TOTAL NUMBER OF DAYS BEFORE 'dt2' 
           let n2 = dt2.y * 365 + dt2.d; 
           for (let i = 0; i < dt2.m - 1; i++) 
           { 
@@ -52,7 +46,6 @@ const Twoparameter = () => {
           } 
           n2 += countLeapYears(dt2); 
      
-          // return difference between two counts 
           return (n2 - n1); 
   } 
     

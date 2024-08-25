@@ -1,12 +1,18 @@
 import React, { useState } from "react";
 import NewCalendar from "./NewCalendar";
+import Twoparameter from "./Twoparameter";
 
 const Calendar = () => {
   const [data, setdata] = useState();
   const [ans, setans] = useState();
   const [discalender, setdiscalendar] = useState('none');
+  const [disdaycount,setdisdaycount]=useState('none')
   const [dateformate,setdateformate]=useState('01-01-2020');
- 
+ function daycount(){
+  if(disdaycount=='none')
+    setdisdaycount('flex')
+   else setdisdaycount('none')
+ }
 function showcalendar(){
   if(discalender=='none')
    setdiscalendar('flex')
@@ -59,7 +65,16 @@ function showcalendar(){
         <div style={{display:'flex',justifyContent:'center',marginTop:'10px',}} >
             <button  onClick={()=>{showcalendar()}} style={{borderRadius:'10px',border:'solid 3px',padding:'1px',backgroundColor:'orange',width:'200px'}} >{discalender==='none'?"Show Calender":"Hide Calender"} </button>
         </div>
+        <div style={{display:'flex',justifyContent:'center',marginTop:'10px',}} >
+            <button  onClick={()=>{daycount()}} style={{borderRadius:'10px',border:'solid 3px',padding:'1px',backgroundColor:'orange',width:'200px'}} >{disdaycount==='none'?"Show day count":"Hide day count"} </button>
+        </div>
         <div style={{display:'flex',justifyContent:'center'}}><span>{(ans)? `${ans} on ${data}`  :''}</span></div>
+        <div style={{display:'flex',justifyContent:'center'}}>
+        <div style={{display:disdaycount}}> 
+          <Twoparameter/>
+      </div>
+        </div>
+        
       <div style={{display:discalender}}> 
       <NewCalendar  dateformate={dateformate}/>
       </div>
