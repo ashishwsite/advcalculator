@@ -1,3 +1,4 @@
+import { round } from "mathjs";
 import React, { useState } from "react";
 
 function App() {
@@ -76,8 +77,8 @@ function App() {
     var denomerator = 2 * a1;
     var rootdec = Math.pow(descriment, 1 / 2);
     // console.log(rootdec);
-    var root1 = (-1 * b1 - rootdec) / denomerator;
-    var root2 = (-1 * b1 + rootdec) / denomerator;
+    var root1 = round((-1 * b1 - rootdec) / denomerator,2);
+    var root2 = round((-1 * b1 + rootdec) / denomerator,2);
 
     setmess(`  Root are : ${root1} and ${root2}`);
   };
@@ -121,7 +122,7 @@ function App() {
                             onChange={(e) => {
                             seta1(e.target.value);
                             }}
-                            type="text"
+                            type="number"
                             placeholder="2x² i.e 2 "
                             value={a1}/>
                              <label
@@ -142,7 +143,7 @@ function App() {
                         onChange={(e) => {
                             setb1(e.target.value);
                         }}
-                        type="text"
+                        type="number"
                         placeholder="2x²+ 3x -5 =0 i.e 3"
                         value={b1}
                         />
@@ -164,7 +165,7 @@ function App() {
                         onChange={(e) => {
                         setc1(e.target.value);
                         }}
-                        type="text"
+                        type="number"
                         placeholder="2x²+ 3x -5 =0 i.e -5 "
                         value={c1}
                     />
