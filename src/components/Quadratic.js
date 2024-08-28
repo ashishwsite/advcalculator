@@ -122,7 +122,7 @@ function App() {
                             onChange={(e) => {
                             seta1(e.target.value);
                             }}
-                            type="number"
+                            type="text"
                             placeholder="2x² i.e 2 "
                             value={a1}/>
                              <label
@@ -143,7 +143,7 @@ function App() {
                         onChange={(e) => {
                             setb1(e.target.value);
                         }}
-                        type="number"
+                        type="text"
                         placeholder="2x²+ 3x -5 =0 i.e 3"
                         value={b1}
                         />
@@ -165,7 +165,7 @@ function App() {
                         onChange={(e) => {
                         setc1(e.target.value);
                         }}
-                        type="number"
+                        type="text"
                         placeholder="2x²+ 3x -5 =0 i.e -5 "
                         value={c1}
                     />
