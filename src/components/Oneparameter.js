@@ -233,7 +233,7 @@ function Oneparameter() {
       </div>
 
       <div>
-        <h2 style={{ textAlign: "center" }}>
+        <h2 style={{ textAlign: "center",color:'moccasin' }}>
           {" "}
           {output.ke},{output.mess}
         </h2>
