@@ -105,8 +105,8 @@ function App() {
     setmess(` Optimal  point =>   ${crt}  \n\n optimal  value => ${crtval}`);
   };
   return (
-    <div className="continer" style={{color:'gray'}}>
-       <h1 class="text-center" style={{color:'purple'}}>Quadratic Eqation Solver</h1>
+    <div className="continer" style={{color:'pink'}}>
+       <h1 class="text-center" style={{color:'yellow'}}>Quadratic Eqation Solver</h1>
       <div style={{display:'flex',justifyContent:'center',marginLeft:'50px'}}>
         <div className="continer" >
                            <label htmlFor="a" style={{ display: "block" }}className="form-label"> cofficent of X^2 (a){" "}</label>

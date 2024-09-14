@@ -28,7 +28,7 @@ const Fracexpression = () => {
         
     }
   return (
-    <div style={{color:'gray'}}>
+    <div style={{color:'pink'}}>
       <h4 style={{textAlign:'center'}}> Fraction Expression Evaluation</h4>
       <br></br>
       <textarea class="form-control" placeholder="input  formate 4/2+5/665-6/1" aria-label="With textarea" id="inputid1" style={{ borderRadius:'10px',textAlign:'center'}}

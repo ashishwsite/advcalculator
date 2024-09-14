@@ -1,20 +1,32 @@
 import React from 'react'
-import himg from "./Images/2.png"
+
 import Calculator from './Calculator/Calculator';
 import Quadratic from './Quadratic';
 import Oneparameter from './Oneparameter'
+import Display from './Calculator/Display';
 const Home = () => {
   return (
     <div>
-      <img src={himg} alt="landing" class="img-fluid rounded-top-3"/>
-      <div style={{height:'2px',width:'100vw',border:'2px solid'}}>
-
-      </div>
+     <div className='container'>
+     <h1 class="text-center" style={{color:'yellow',fontFamily:'monospace',fontStyle:'revert'}}>Welcome to modern Calculator</h1>
+     <h1 style={{color:'blue'}}>About Calculator</h1>
+     <div className='container' style={{display:'flex',alignItems:'center'}}>
+     <ul style={{color:'red'}}>
+      <li>Basic Calculator</li>
+      <li> Scientific Calculator</li>
+      <li>Quadratic Eqaution Solve</li>
+      <li>Expression Evaluation</li>
+      <li>calendar Display</li>
+      <li> Statical Calculation</li>
+     </ul>
+    
+     </div>
+     
+     </div>
       <div>
-        <h1 class="text-center" style={{color:'purple'}}>Basic Calulator</h1>
+      <h1 class="text-center" style={{color:'orange'}}>Basic Calculator</h1>
         <Calculator/>
         <div style={{height:'2px',width:'100vw',border:'2px solid'}}></div>
-
       </div>
       <div style={{height:'2px',width:'100vw',border:'2px solid'}}></div>
       <div>
