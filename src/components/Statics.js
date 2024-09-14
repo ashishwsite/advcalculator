@@ -108,7 +108,7 @@ const Statics = () => {
  
     };
   return (
-    <div>
+    <div style={{color:'gray'}} >
       <h4 style={{textAlign:'center'}}>Statics Calculation</h4>
       <br></br>
       <textarea class="form-control" aria-label="With textarea" id="inputid1" style={{ borderRadius:'10px',textAlign:'center'}}
@@ -128,10 +128,18 @@ const Statics = () => {
              </div>
              <h2 style={{textAlign:'center'}}>Ans:{res}</h2>
             
-          
+             <div className='container'>
+          <h2 class="text-center" style={{color:'red',marginTop:'50px'}}>Statics Calculation</h2>
+          <p>
+            <b>Input formate </b> is separted by comma i.e 4,5,6,9,1
+            <br></br>
+            If want to enter data consisting <b>xi and fi</b> (frequency)   Enter formate  i.e :  xi*fi, x2*f2, x3*f3 <br></br>
+            example 4*2, 3*5, 15*2
+           </p>
+          </div>
           
             
-    </div>
+    </div> 
   )
 }
 

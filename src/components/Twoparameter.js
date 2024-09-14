@@ -100,7 +100,17 @@ const Twoparameter = () => {
         <button  onClick={()=>{DayCount()}} style={{borderRadius:'10px',border:'solid 3px',padding:'1px',backgroundColor:'orange',width:'200px'}} >Find No.of days 
         </button>
       </div >
-      <div style={{display:'flex',justifyContent:'center'}}><span>{(res)? `No of Days between dates : ${res}`  :''}</span></div>
+      <div style={{display:'flex',justifyContent:'center',color:'magenta'}}><span>{(res)? `No of Days between dates : ${res}`  :''}</span></div>
+      <div className=" container use_guid"  style={{color:'goldenrod'}}>
+      <h2 class="text-center" style={{color:'red',marginTop:'50px'}}>Use Guidelines</h2>
+     
+      <p style={{color:'blue',fontSize:'30px',marginTop:'20px'}}>Find No. (number) of days </p>
+      <span>
+      This button help to find the number day between days , i.e day count between : [12-02-2024 ] and [15-02-2024] is 3 days.<br></br>
+      It take two input like starting date(20-02-2023) and ending date(25-12-2023) 
+      </span>
+
+      </div>
     </div>
   )
 }
